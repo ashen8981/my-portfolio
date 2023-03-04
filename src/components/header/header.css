@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 120vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -22,7 +22,7 @@ header{
 /*==========================Socials========================*/
 
 .header__socials{
-    font-size: 30px;
+    font-size: 20px;
     top: 280px;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ header{
 
 @media screen and (max-width:1024px) {
     header{
-        height: 68vh;
+        height: 120vh;
     }
 }
 
@@ -76,13 +76,14 @@ header{
 
 @media screen and (max-width:600px) {
     header{
-        height: 100vh;
+        height: 120vh;
         padding-top: 4rem;
     }
-    .header_socials, .scroll_down{
+    .header__socials, .scroll_down{
         display: none;
     }
     .me{
-        margin-top: 0;
+        margin-top: 10;
+        margin-bottom: 10;
     }
 }
