@@ -18,7 +18,7 @@ function Experience() {
   return (
     <section id='experience'>
       
-      <h5 className='ex'>What Skills I Have</h5>
+      <h5 className='ex1'>What Skills I Have</h5>
       <h2>My Skills</h2>
       
       <div className="container experience__container">

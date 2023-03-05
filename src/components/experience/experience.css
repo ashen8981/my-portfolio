@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.ex1{
+    margin-top: -5rem;
+   }
+
 .skill{
     background: var(--color-bg-variant);
     padding: 1rem;
@@ -35,7 +39,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1rem;
    }
-   .ex{
+   .ex1{
     margin-top: 15rem;
    }
 }
@@ -46,7 +50,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1rem;
        }
-       .ex{
+       .ex1{
         margin-top: 15rem;
        }
 
