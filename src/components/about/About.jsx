@@ -16,7 +16,7 @@ function About() {
           </div>
         </div>
           <div className="about__content">
-            <p>A third-year IT diplomat at the Institute of Technology, University of Moratuwa(NDT) who is passionate about Fullstack Development.
+            <p>A third-year IT student at the Institute of Technology, University of Moratuwa(NDT) who is passionate about Fullstack Development.
             I have a strong passion for coding. I enjoy collaborating with others, sharing my ideas and learning from my peers.
             I am always looking for ways to improve my skills. 
                            
