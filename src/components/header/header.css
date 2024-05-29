@@ -1,3 +1,33 @@
+.custom-cursor {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Animate the cursor */
+  .custom-cursor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    animation: cursor-blink 1s infinite;
+  }
+  
+  @keyframes cursor-blink {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+
 header{
     height: 120vh;
     padding-top: 7rem;
