@@ -15,7 +15,7 @@ const Footer = () => {
       </ul>
       <div className="footer__coyright">
         <small>
-        &copy; 2024 Ashen Malindu. All rights reserved.
+        &copy; 2025 Ashen Malindu. All rights reserved.
           </small>
       </div>
     </footer>
