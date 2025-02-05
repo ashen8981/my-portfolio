@@ -8,6 +8,7 @@ import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import './splashScreen.css'; 
+import ThreeDBackground from "./threeDBackground";
 
 const loadingTexts = ["Loading...", "Please Wait...", "Getting Ready..."];
 
@@ -37,6 +38,8 @@ const App = () => {
         </div>
       ) : (
         <>
+          <ThreeDBackground /> {/* This will render the Three.js 3D background */}
+          {/* Other sections */}
           <Header />
           <Nav />
           <About />
