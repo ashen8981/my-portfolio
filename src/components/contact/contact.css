@@ -68,7 +68,7 @@ input, textarea{
      gap: 2rem;
     }
     .ex123{
-     margin-top: 31rem;
+     margin-top: 3rem;
     }
  }
  
@@ -77,7 +77,7 @@ input, textarea{
        width: var(--container-width-sm);
        }
        .ex123{
-        margin-top: 64rem;
+        margin-top: 1rem;
        }
     
  }

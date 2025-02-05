@@ -35,13 +35,13 @@ footer a{
 @media screen and (max-width:1024px) {
 
     .ft{
-     margin-top: 25rem;
+     margin-top: 5rem;
     }
  }
  
  @media screen and (max-width:600px) {
     .ft{
-        margin-top: 30rem;
+        margin-top: 3rem;
        }
 
        .permalinks{
