@@ -28,7 +28,7 @@
   
   /* Loading Bar Animation */
   .loading-bar {
-    width: 150px;
+    width: 200px;
     height: 5px;
     margin-top: 20px;
     background: rgba(255, 255, 255, 0.1); /* Subtle contrast */
