@@ -3,6 +3,10 @@ import './portfolio.css'
 import ITUM from '../../assets/ITUM.png'
 import VOTE from '../../assets/VOTE.png'
 import COFFEE from '../../assets/COFFEE.png'
+import FUEL from '../../assets/FUEL.png'
+import CAFE from '../../assets/CAFE.png'
+import BLOG from '../../assets/BLOG.png'
+
 
 function Portfolio() {
   return (
@@ -33,6 +37,34 @@ function Portfolio() {
             <h3>COFFEE APP</h3>
             <h5>Flutter</h5>
             <a href='https://github.com/ashen8981/Coffe_UI.git' className='btn' target='_blank'>GitHub</a>
+        </article>
+        <article className='porfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={FUEL} alt=''/>
+            </div>
+            <h3>Fuel Management APP</h3>
+            <h5>Flutter</h5>
+            <a href='https://github.com/ashen8981/Fuel_App.git' className='btn' target='_blank'>GitHub</a>
+        </article>
+        <article className='porfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={CAFE} alt=''/>
+            </div>
+            <h3>Perkup Cafe Website</h3>
+            <h5>React JS, Vite, Tailwind CSS</h5>
+            <a href="https://perkupcafe1.netlify.app/" className="btn" target="_blank" rel="noopener noreferrer">
+            Visit Website
+            </a>
+        </article>
+        <article className='porfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={BLOG} alt=''/>
+            </div>
+            <h3>Blog Site</h3>
+            <h5>React Js, Express, Node Js, MongoDB</h5>
+            <a href="https://github.com/ashen8981/blog_website_MERN.git" className="btn" target="_blank" rel="noopener noreferrer">
+            GitHub
+            </a>
         </article>
       </div>
     </section>
