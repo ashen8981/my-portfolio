@@ -17,10 +17,9 @@ function About() {
         </div>
           <div className="about__content">
             <p>
-              I am a Software Engineer, educated at the Institute of Technology, 
-              University of Moratuwa, where I completed my academic studies. 
-              I am passionate about full-stack development and seeking an opportunity to get experience 
-              while applying my knowledge to the field and giving my best to the company.               
+            I am a Software Engineer, a graduate of the Institute of Technology, University of Moratuwa, with a strong passion for full-stack development. 
+            I am eager to gain hands-on experience while applying my knowledge and skills to real-world projects. 
+            My goal is to contribute effectively to a dynamic team and continuously grow as a developer, delivering my best to the company.               
             </p>
             <a href='#contact' className='btn btn-primary'>Let's Talk</a>
           </div>
