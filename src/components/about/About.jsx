@@ -16,10 +16,11 @@ function About() {
           </div>
         </div>
           <div className="about__content">
-            <p>A third-year IT student at the Institute of Technology, University of Moratuwa(NDT) who is passionate about Fullstack Development.
-            I have a strong passion for coding. I enjoy collaborating with others, sharing my ideas and learning from my peers.
-            I am always looking for ways to improve my skills. 
-                           
+            <p>
+              I am a Software Engineer, educated at the Institute of Technology, 
+              University of Moratuwa, where I completed my academic studies. 
+              I am passionate about full-stack development and seeking an opportunity to get experience 
+              while applying my knowledge to the field and giving my best to the company.               
             </p>
             <a href='#contact' className='btn btn-primary'>Let's Talk</a>
           </div>
