@@ -9,6 +9,7 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import './splashScreen.css'; 
 import ThreeDBackground from "./threeDBackground";
+import { trackUserVisit } from "./utils/googleAnalytics";
 
 const loadingTexts = ["Loading...", "Please Wait...", "Getting Ready..."];
 
@@ -17,6 +18,7 @@ const App = () => {
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
+    trackUserVisit(); // Track visitor details on page load
     const textInterval = setInterval(() => {
       setTextIndex((prevIndex) => (prevIndex + 1) % loadingTexts.length);
     }, 1200); // Change text every 1.2 seconds
