@@ -7,9 +7,9 @@ import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import './splashScreen.css'; 
-import ThreeDBackground from "./threeDBackground";
-import { trackUserVisit } from "./utils/googleAnalytics";
+import './styles//splashScreen.css'; 
+import ThreeDBackground from "./styles/threeDBackground";
+import { initializeSentry} from './utils/sentry';
 
 const loadingTexts = ["Loading...", "Please Wait...", "Getting Ready..."];
 
@@ -18,7 +18,8 @@ const App = () => {
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
-    trackUserVisit(); // Track visitor details on page load
+    // Initialize Sentry
+    initializeSentry();
     const textInterval = setInterval(() => {
       setTextIndex((prevIndex) => (prevIndex + 1) % loadingTexts.length);
     }, 1200); // Change text every 1.2 seconds
@@ -26,7 +27,7 @@ const App = () => {
     setTimeout(() => {
       setLoading(false);
       clearInterval(textInterval);
-    }, 3000); // Show splash screen for 3 seconds
+    }, 2000); // Show splash screen for 2 seconds
 
     return () => clearInterval(textInterval);
   }, []);
