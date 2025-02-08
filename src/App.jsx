@@ -11,7 +11,6 @@ import './styles//splashScreen.css';
 import ThreeDBackground from "./styles/threeDBackground";
 import { initializeSentry } from './utils/sentry';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const loadingTexts = ["Loading...", "Please Wait...", "Getting Ready..."];
 

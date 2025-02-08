@@ -4,7 +4,6 @@ import CTA from './CTA';
 import ME from '../../assets/ME.jpg';
 import HeaderSocials from './HeaderSocials';
 import { useTypewriter } from 'react-simple-typewriter';
-import 'aos/dist/aos.css';
 
 function Header() {
   const [typeEffect] = useTypewriter({
