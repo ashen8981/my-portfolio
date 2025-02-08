@@ -9,7 +9,9 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import './styles//splashScreen.css'; 
 import ThreeDBackground from "./styles/threeDBackground";
-import { initializeSentry} from './utils/sentry';
+import { initializeSentry } from './utils/sentry';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Ensure you import the AOS CSS
 
 const loadingTexts = ["Loading...", "Please Wait...", "Getting Ready..."];
 
@@ -18,8 +20,17 @@ const App = () => {
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
+    // Initialize AOS for scroll animations
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+    AOS.refresh();
+
     // Initialize Sentry
     initializeSentry();
+
     const textInterval = setInterval(() => {
       setTextIndex((prevIndex) => (prevIndex + 1) % loadingTexts.length);
     }, 1200); // Change text every 1.2 seconds
