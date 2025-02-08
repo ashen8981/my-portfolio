@@ -1,0 +1,33 @@
+
+/* AOS: Fade In */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
+  }
+  
+  [data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* AOS: Fade Left */
+  [data-aos="fade-left"] {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
+  }
+  
+  [data-aos="fade-left"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* AOS: Fade Right */
+  [data-aos="fade-right"] {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
+  }
+  
+  [data-aos="fade-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
