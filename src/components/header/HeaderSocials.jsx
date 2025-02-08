@@ -2,7 +2,6 @@ import React from 'react';
 import { ImLinkedin } from 'react-icons/im';
 import { BsGithub } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
-import './../../styles/aos/aosStyles.css';
 
 function HeaderSocials() {
   return (
