@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './footer.css';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Footer = () => {
