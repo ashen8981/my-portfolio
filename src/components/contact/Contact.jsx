@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './contact.css';
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookMessenger } from 'react-icons/fa';
@@ -7,17 +7,33 @@ import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const form = useRef();
+  const [message, setMessage] = useState({ text: '', type: '' }); // Unified state for message
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_d806n3c',
-      'template_nn6cb6j',
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       form.current,
-      'yvcO6PXU_OhBLAF23'
-    );
-    e.target.reset();
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then((result) => {
+      console.log("Email sent successfully", result.text);
+      setMessage({ text: "Email sent successfully!", type: 'success' });
+
+      // Auto hide the message after 3 seconds
+      setTimeout(() => setMessage({ text: '', type: '' }), 3000);
+    })
+    .catch((error) => {
+      console.error("Error sending email:", error.text);
+      setMessage({ text: "Failed to send email. Please try again.", type: 'error' });
+
+      // Auto hide the message after 3 seconds
+      setTimeout(() => setMessage({ text: '', type: '' }), 3000);
+    });
+
+    e.target.reset();  // Reset form after submit
   };
 
   return (
@@ -27,6 +43,7 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
+          {/* Contact Options */}
           <article className="contact__option" data-aos="fade-right">
             <MdEmail className="contact__option-icon" />
             <h4>Email</h4>
@@ -63,6 +80,18 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
+
+          {/* Success/Error Message */}
+          {message.text && (
+            <div 
+              className={`message ${message.type}`}
+              style={{ marginTop: '20px' }}
+              role="alert"
+              aria-live="assertive"
+            >
+              {message.text}
+            </div>
+          )}
         </form>
       </div>
     </section>
