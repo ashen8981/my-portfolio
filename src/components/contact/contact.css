@@ -1,50 +1,78 @@
-.container.contact__container {
+:root {
+    --color-bg: #121212;
+    --color-bg-variant: #1e1e1e;
+    --color-primary: #4db6ac; /* Soft Teal */
+    --color-primary-variant: rgba(77, 182, 172, 0.4);
+    --color-white: #f5f5f5;
+    --color-error: #ff6f61; /* Red-ish Color for Errors */
+    --color-success: var(--color-primary); /* Soft Teal for Success */
+    --transition: all 400ms ease;
+  }
+  
+  .message {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .success {
+    background-color: var(--color-success);
+    color: var(--color-white);
+  }
+  
+  .error {
+    background-color: var(--color-error);
+    color: var(--color-white);
+  }
+  
+  /* Contact Section */
+  .container.contact__container {
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
-}
-
-.contact__options{
+  }
+  
+  .contact__options {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-}
-
-.contact__option{
+  }
+  
+  .contact__option {
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
-}
-
-.contact__option:hover{
+  }
+  
+  .contact__option:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
-}
-
-.contact__option-icon{
+  }
+  
+  .contact__option-icon {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-}
-
-.contact__option a{
+  }
+  
+  .contact__option a {
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
-}
-
-/*================form==============*/
-
-form{
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-}
-
-input, textarea{
+  }
+  
+  input, textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
