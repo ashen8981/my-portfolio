@@ -11,6 +11,7 @@ import './styles//splashScreen.css';
 import ThreeDBackground from "./styles/threeDBackground";
 import { initializeSentry } from './utils/sentry';
 import AOS from 'aos';
+import Cursor from './components/cursor/cursor.js';
 
 const loadingTexts = ["Loading...", "Please Wait...", "Getting Ready..."];
 
@@ -44,6 +45,7 @@ const App = () => {
 
   return (
     <>
+     <Cursor />
       {loading ? (
         <div className="splash-screen">
           <div className="loading-text">{loadingTexts[textIndex]}</div>
