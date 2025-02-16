@@ -10,6 +10,10 @@ footer a{
     color: var(--color-bg);
 }
 
+.ft {
+    cursor: default; /* Restore default cursor inside the footer */
+  }
+  
 .footer__logo{
     font-size: 2rem;
     font-weight: 500;
