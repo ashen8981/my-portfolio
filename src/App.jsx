@@ -12,6 +12,7 @@ import ThreeDBackground from "./styles/threeDBackground";
 import { initializeSentry } from './utils/sentry';
 import AOS from 'aos';
 import Cursor from './components/cursor/cursor.js';
+import ParticleTrail from  "./styles/particleTrail";
 
 const loadingTexts = ["Loading...", "Please Wait...", "Getting Ready..."];
 
@@ -53,7 +54,8 @@ const App = () => {
         </div>
       ) : (
         <>
-          <ThreeDBackground /> {/* This will render the Three.js 3D background */}
+          <ThreeDBackground /> {/* Renders the 3D background */}
+          <ParticleTrail />  {/* Adds the mouse trail effect */}
           {/* Other sections */}
           <Header />
           <Nav />
