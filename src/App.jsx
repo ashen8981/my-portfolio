@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <>
-    {/* <Cursor /> */}
+    <Cursor />
       {loading ? (
         <div className="splash-screen">
           <div className="loading-text">{loadingTexts[textIndex]}</div>
