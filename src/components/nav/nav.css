@@ -30,3 +30,9 @@ nav a.active{
     background: var(--color-primary);
     color: var(--color-bg);
 }
+
+@media (max-width: 375px) {
+    nav {
+        display: none;
+    }
+}
